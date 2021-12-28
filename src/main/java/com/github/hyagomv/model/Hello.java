@@ -1,13 +1,15 @@
 package com.github.hyagomv.model;
 
-public class Hello {
-	private String[] msgs = { "Hello World!", "Bye World!" };
+import java.util.List;
 
-	public String[] getMsgs() {
+public class Hello {
+	private List<String> msgs = List.of("Hello World!", "Bye World!");
+
+	public List<String> getMsgs() {
 		return msgs;
 	}
 
-	public void setMsgs(String[] msgs) {
+	public void setMsgs(List<String> msgs) {
 		this.msgs = msgs;
 	}
 
