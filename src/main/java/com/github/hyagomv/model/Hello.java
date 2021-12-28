@@ -1,14 +1,14 @@
 package com.github.hyagomv.model;
 
 public class Hello {
-	private String msg = "Hello World!";
+	private String[] msgs = { "Hello World!", "Bye World!" };
 
-	public String getMsg() {
-		return msg;
+	public String[] getMsgs() {
+		return msgs;
 	}
 
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setMsgs(String[] msgs) {
+		this.msgs = msgs;
 	}
 
 }

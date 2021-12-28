@@ -1,23 +1,23 @@
 package com.github.hyagomv.controller;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 
+import com.github.hyagomv.model.Hello;
 
 @Named("hello")
 public class HelloController {
 
-	private Letra letra = Letra.A;
+	@Inject
+	private Hello msg;
 
-	public Letra getLetra() {
-		return letra;
+	public Hello getMsg() {
+		return msg;
 	}
 
-	public void setLetra(Letra letra) {
-		this.letra = letra;
+	public void setMsg(Hello msg) {
+		this.msg = msg;
 	}
 
-}
-
-enum Letra {
-	A
+	
 }
