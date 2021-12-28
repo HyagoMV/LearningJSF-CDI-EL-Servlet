@@ -8,10 +8,10 @@
 <h:head>
 </h:head>
 <h:body>
-	<ui:repeat var="msg" value="#{hello.msg.msgs}">
-		<h:outputLabel value="#{msg}"/>
-		<br />
-	</ui:repeat>
+	<h:outputLabel value="#{hello.msg.msgs[0]}" />
+	<br />
+	<h:outputLabel value="#{hello.msg.msgs.get(1)}" />
+	<br />
 </h:body>
 </html>
 
