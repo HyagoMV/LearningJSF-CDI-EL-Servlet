@@ -3,7 +3,7 @@ package com.github.hyagomv.controller;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.github.hyagomv.controller.model.Hello;
+import com.github.hyagomv.model.Hello;
 
 @Named("hello")
 public class HelloController {

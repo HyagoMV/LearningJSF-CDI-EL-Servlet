@@ -1,4 +1,4 @@
-package com.github.hyagomv.controller.model;
+package com.github.hyagomv.model;
 
 public class Hello {
 	private String msg = "Hello World!";
