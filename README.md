@@ -1,0 +1,6 @@
+- Java 17
+- Wildfly 17
+- JSF 2.3
+- EL 3.0
+- Servlet 4.0
+- CDI 2.0
