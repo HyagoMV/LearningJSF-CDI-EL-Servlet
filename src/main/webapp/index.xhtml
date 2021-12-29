@@ -10,11 +10,11 @@
 <h:body>
 
 
-	<h:form>
-		<h:commandButton value="Click" actionListener="#{hello.foo}" />
-	</h:form>
-
-
+	<!-- LIST -->
+	<ui:repeat var="fruta" value="#{['Maça', 'Pera', 'Limão']}">
+		<h:outputLabel value="#{fruta}" />
+		<br />
+	</ui:repeat>
 
 
 
