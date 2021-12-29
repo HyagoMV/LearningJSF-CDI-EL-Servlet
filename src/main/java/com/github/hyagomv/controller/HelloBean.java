@@ -1,18 +1,29 @@
 package com.github.hyagomv.controller;
 
+import java.io.Serializable;
+
+import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 
 @Named("hello")
-public class HelloBean {
+@ViewScoped
+public class HelloBean implements Serializable {
 
-	private String[] strings = { "A", "B" };
+	private static final long serialVersionUID = 1L;
 
-	public String[] getStrings() {
-		return strings;
+	private boolean show;
+
+	public void foo() {
+		show = !show;
+		System.out.println(show);
 	}
 
-	public void setStrings(String[] strings) {
-		this.strings = strings;
+	public boolean isShow() {
+		return show;
+	}
+
+	public void setShow(boolean show) {
+		this.show = show;
 	}
 
 }

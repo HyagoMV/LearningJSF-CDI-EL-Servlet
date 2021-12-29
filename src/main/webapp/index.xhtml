@@ -9,8 +9,11 @@
 </h:head>
 <h:body>
 
-	<h:outputLabel value="TEST" rendered="false"/>
-		<h:outputLabel value="TEST" rendered="#{true or true}"/>
+	<h:form>
+		<h:commandButton value="Click" actionListener="#{hello.foo}" />
+	</h:form>
+
+	<h:outputLabel value="TEST" rendered="#{hello.show}" />
 
 </h:body>
 </html>
