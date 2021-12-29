@@ -4,15 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
 <h:head>
 </h:head>
 <h:body>
+	<c:set var="numeros" value="#{[0,1,2,3,4,5,6,7,8,9,10]}" />
 
-
-	<!-- SET -->
-	<ui:repeat var="num" 
-		value="#{[0,1,2,3,4,5,6,7,8,9,10].stream().filter(n->n>5).toList()}">
+	<!-- Stream -->
+	<ui:repeat var="num" value="#{numeros.stream().filter(n->n>5).toList()}">
 		<h:outputLabel value="#{num}" />
 		<br />
 	</ui:repeat>
