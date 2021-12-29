@@ -1,15 +1,15 @@
 package com.github.hyagomv.model;
 
-import java.util.Set;
+import java.util.Map;
 
 public class Hello {
-	private Set<String> msgs = Set.of("Hello World!", "Bye World!");
+	private Map<Integer, String> msgs = Map.of(0, "Hello World!", 1, "Bye World!");
 
-	public Set<String> getMsgs() {
+	public Map<Integer, String> getMsgs() {
 		return msgs;
 	}
 
-	public void setMsgs(Set<String> msgs) {
+	public void setMsgs(Map<Integer, String> msgs) {
 		this.msgs = msgs;
 	}
 
