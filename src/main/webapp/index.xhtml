@@ -9,15 +9,8 @@
 </h:head>
 <h:body>
 
-	<h:form>
-		<h:commandButton value="Click" onclick="foo('#{hello.strings[0]}')"/>
-	</h:form>
-	
-	<script>
-		function foo(name) {
-			alert(name)
-		}
-	</script>
+	<h:outputLabel value="TEST" rendered="false"/>
+		<h:outputLabel value="TEST" rendered="#{true or true}"/>
 
 </h:body>
 </html>
