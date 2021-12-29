@@ -10,7 +10,9 @@
 <h:body>
 
 	
-	#{foo = x -> x * x * x; foo(3)}
+	<h:form>
+		<h:commandButton value="Click" actionListener="#{hello.foo(x->x*x*x, 3)}"/>
+	</h:form>
 
 
 
