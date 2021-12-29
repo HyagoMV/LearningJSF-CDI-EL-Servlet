@@ -9,17 +9,8 @@
 </h:head>
 <h:body>
 
-	<h:form>
-		<h:commandButton id="button" value="#{hello.show ? 'Hide' : 'Show'}">
-			<f:ajax render="button test" listener="#{hello.foo()}" />
-		</h:commandButton>
-	</h:form>
-
-	<h:panelGroup id="test">
-		<ui:fragment rendered="#{hello.show}">
-			<h6>TEST</h6>
-		</ui:fragment>
-	</h:panelGroup>
+	
+	#{(numero -> numero + 10)(5)}
 
 
 
