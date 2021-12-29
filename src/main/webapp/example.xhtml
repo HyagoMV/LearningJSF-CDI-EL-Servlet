@@ -4,17 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
 <h:head>
 </h:head>
 <h:body>
 	
-	<h:form>
-		<!-- Foward -->
-		<h:commandButton value="Foward" actionListener="#{example.foo}" action="example" />
-		<!-- Redirect -->
-		<h:commandButton value="Redirect" actionListener="#{example.foo}" action="example?faces-redirect=true" />
-	</h:form>
+	#{example.fruta}
 
 
 </h:body>
