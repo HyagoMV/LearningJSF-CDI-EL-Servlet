@@ -9,13 +9,16 @@
 </h:head>
 <h:body>
 
-	<h:outputLabel value="Test" styleClass="border"/>
+	<h:form>
+		<h:commandButton value="Click" onclick="foo('#{hello.strings[0]}')"/>
+	</h:form>
 	
-	<style>
-		.border {
-			border: 1px solid red;
+	<script>
+		function foo(name) {
+			alert(name)
 		}
-	</style>
+	</script>
+
 </h:body>
 </html>
 
