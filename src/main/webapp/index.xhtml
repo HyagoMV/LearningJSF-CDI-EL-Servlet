@@ -8,12 +8,11 @@
 <h:head>
 </h:head>
 <h:body>
-	
-	<h:form>
-		<h:commandButton action="#{hello.goToIndex1}" value="Index 1"/>
-		<h:commandButton action="#{hello.goToIndex2}" value="Index 2"/>
-		<h:commandButton action="#{hello.goToIndex3}" value="Index 3"/>
-	</h:form>
+
+	<ui:repeat var="string" value="#{hello.strings}" varStatus="status">
+		<h:outputLabel value="#{status.index} - #{string}" />
+		<br />
+	</ui:repeat>
 
 </h:body>
 </html>
