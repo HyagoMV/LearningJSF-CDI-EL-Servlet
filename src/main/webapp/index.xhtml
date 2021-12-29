@@ -10,10 +10,15 @@
 <h:body>
 
 	<h:form>
-		<h:commandButton value="Click" actionListener="#{hello.foo}" />
+		<h:commandButton id="button" value="#{hello.show ? 'Hide' : 'Show'}">
+			<f:ajax render="button test" listener="#{hello.foo()}" />
+		</h:commandButton>
 	</h:form>
 
-	<h:outputLabel value="TEST" rendered="#{hello.show}" />
+	<h:panelGroup  id="test">
+		<h:outputLabel value="TEST" rendered="#{hello.show}" />
+	</h:panelGroup >
+
 
 </h:body>
 </html>

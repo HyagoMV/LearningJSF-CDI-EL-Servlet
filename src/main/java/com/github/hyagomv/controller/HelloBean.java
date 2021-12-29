@@ -15,7 +15,6 @@ public class HelloBean implements Serializable {
 
 	public void foo() {
 		show = !show;
-		System.out.println(show);
 	}
 
 	public boolean isShow() {
