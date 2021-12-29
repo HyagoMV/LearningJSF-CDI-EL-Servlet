@@ -1,32 +1,26 @@
 package com.github.hyagomv.controller;
 
-import javax.inject.Inject;
-import javax.inject.Named;
+import java.io.IOException;
 
-import com.github.hyagomv.model.Hello;
+import javax.faces.context.FacesContext;
+import javax.inject.Named;
 
 @Named("hello")
 public class HelloBean {
 
-	@Inject
-	private
-	Hello msg;
-	
-	public void fazAlgo(int step) {
-		System.out.println("Step " + step);
-		System.out.println("Step " + ++step);
+	public String goToIndex1() {
+		return "index1";
 	}
 	
-	public void fazAlgo(String step) {
-		System.out.println("Step " + step);
+	public String goToIndex2() {
+		return "index2?faces-redirect=true";
 	}
-
-	public Hello getMsg() {
-		return msg;
+	
+	public void goToIndex3() {
+		try {
+			FacesContext.getCurrentInstance().getExternalContext().redirect("index3.xhtml");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
-
-	public void setMsg(Hello msg) {
-		this.msg = msg;
-	}
-
 }
