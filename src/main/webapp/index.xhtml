@@ -11,8 +11,8 @@
 
 
 	<!-- SET -->
-	<ui:repeat var="fruta" value="#{{'Maça', 'Pera', 'Limão', 'Limão'}}">
-		<h:outputLabel value="#{fruta}" />
+	<ui:repeat var="fruta" value="#{{0 : 'Maça', 1 : 'Pera'}}">
+		<h:outputLabel value="#{fruta.value}" />
 		<br />
 	</ui:repeat>
 
