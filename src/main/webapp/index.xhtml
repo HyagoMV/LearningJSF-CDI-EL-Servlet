@@ -15,9 +15,13 @@
 		</h:commandButton>
 	</h:form>
 
-	<h:panelGroup  id="test">
-		<h:outputLabel value="TEST" rendered="#{hello.show}" />
-	</h:panelGroup >
+	<h:panelGroup id="test">
+		<ui:fragment rendered="#{hello.show}">
+			<h6>TEST</h6>
+		</ui:fragment>
+	</h:panelGroup>
+
+
 
 
 </h:body>
