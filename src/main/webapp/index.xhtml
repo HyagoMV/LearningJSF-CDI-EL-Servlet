@@ -10,8 +10,8 @@
 <h:body>
 
 
-	<!-- LIST -->
-	<ui:repeat var="fruta" value="#{['Maça', 'Pera', 'Limão']}">
+	<!-- SET -->
+	<ui:repeat var="fruta" value="#{{'Maça', 'Pera', 'Limão', 'Limão'}}">
 		<h:outputLabel value="#{fruta}" />
 		<br />
 	</ui:repeat>
