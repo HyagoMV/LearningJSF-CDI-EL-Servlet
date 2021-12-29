@@ -9,10 +9,15 @@
 </h:head>
 <h:body>
 
-	<ui:repeat var="string" value="#{hello.strings}" varStatus="status">
-		<h:outputLabel value="#{status.index} - #{string}" />
-		<br />
-	</ui:repeat>
+	<h:form>
+		<h:commandButton value="Click" onclick="foo()"/>
+	</h:form>
+	
+	<script>
+		function foo() {
+			alert('...')
+		}
+	</script>
 
 </h:body>
 </html>
