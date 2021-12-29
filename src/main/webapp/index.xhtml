@@ -9,7 +9,12 @@
 </h:head>
 <h:body>
 
-	#{hello.fazAlgo()}
+	#{hello.fazAlgo(0)}
+	#{hello.fazAlgo('0')}
+	#{hello.fazAlgo("0")}
+	#{hello.fazAlgo(hello.msg.msgs.toString())}
+	
+
 
 </h:body>
 </html>
